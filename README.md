@@ -44,17 +44,3 @@ python main.py
 ```
 
 > Requires Python 3.10+. Uses `pygame-ce` instead of `pygame` for Python 3.13+ compatibility.
-
----
-
-## 🌐 Play in Browser
-
-Built with [pygbag](https://github.com/pygame-web/pygbag) for web export.
-
----
-
-## 🙏 Credits
-
-Original air hockey simulation by [Ondrej Slama](https://github.com/OndraSlama/AirHockey) — built as part of a robotics diploma thesis at BUT FME.
-
-Game mode, UI, difficulty system, and web export added on top of the original simulation.
