@@ -1,29 +1,60 @@
-# AirHockey
+# 🏒 Air Hockey
 
-Air hockey game and strategy simulation.
+A fast-paced 1v1 air hockey game where you face off against an AI opponent. Move your paddle with your mouse, score goals, and win the match!
 
-## Dependencies:
+---
 
--   pygame (pip install pygame)
+## 🎮 How to Play
 
-## Control:
+- **Move your mouse** to control your paddle (right side)
+- Score in the **AI's goal** (left side) to earn a point
+- First to **7 goals** wins
+- Press **R** to return to the menu or restart
+- Press **ESC** to quit
 
--   Left mouse button - control right striker
+---
 
--   Middle mouse button - puck will move to mouse position instantly
+## ⚙️ Difficulty Levels
 
--   Right mouse button - puck will follow mouse (debug, strategy analysis etc.)
+| Level | Description |
+|---|---|
+| **Easy** | Slow AI, slow puck — great for beginners |
+| **Medium** | Balanced challenge |
+| **Hard** | Fast AI, smooth gliding puck |
+| **Stupidly Hard** | Good luck. |
 
--   Mouse scroll - Change speed of the game
+---
 
-## Settings:
+## 🖥️ Running Locally
 
-Basic settings can be set in main file. There, you can choose how many parrarel games will be evaluated at the same time (usefull for planned neuroevolution teaching) and whether you want to utilize multiprocessing algorithms - only usefull for many parrarel games running concurrently and sped-up gameplay. Use 'MULTIPROCESS = False' most of the time as it will run much faster in single game scenario.
+**1. Clone the repo**
+```bash
+git clone https://github.com/OndraSlama/AirHockey
+cd AirHockey
+```
 
-For more advanced settings/tweaks, see Constants.py file. Many aspects of the simulation/game behaviour can be set there.
+**2. Install dependencies**
+```bash
+pip install pygame-ce matplotlib numpy
+```
 
-## Note:
+**3. Run**
+```bash
+python main.py
+```
 
-Both strikers should now exhibit more advanced playstyle. Prediction and aiming are now implemented. 2 different strategies play againt each other. This should be almost final version of hardcoded strategies. Next step is to try teaching NN to play (NEAT, neuroevultion etc).
+> Requires Python 3.10+. Uses `pygame-ce` instead of `pygame` for Python 3.13+ compatibility.
 
-Spent few more hours on optimalization and tweaking of the StrategyD playstyle. Should be pretty competent now.
+---
+
+## 🌐 Play in Browser
+
+Built with [pygbag](https://github.com/pygame-web/pygbag) for web export.
+
+---
+
+## 🙏 Credits
+
+Original air hockey simulation by [Ondrej Slama](https://github.com/OndraSlama/AirHockey) — built as part of a robotics diploma thesis at BUT FME.
+
+Game mode, UI, difficulty system, and web export added on top of the original simulation.
